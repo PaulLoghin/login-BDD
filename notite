@@ -37,6 +37,7 @@ Git -- > github
     echo "# login-BDD" >> README.md
     git init
     git add README.md
+    Git add [pentru fiecare fisier si pakage]
     git commit -m "first commit"
     git branch -M main
     git remote add origin https://github.com/PaulLoghin/login-BDD.git
