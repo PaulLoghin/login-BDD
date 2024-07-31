@@ -1,0 +1,47 @@
+bdd_project/
+├── features/
+│   ├── user_login.feature
+│   ├── other_feature.feature
+│   └── ...
+├── steps/
+│   ├── __init__.py
+│   ├── user_login_steps.py
+│   └── other_steps.py
+├── pages/
+│   ├── __init__.py
+│   ├── login_page.py
+│   └── dashboard_page.py
+├── behave.ini
+├── driver.py
+├── environment.py
+└── requirements.txt
+
+
+
+https://the-internet.herokuapp.com/login
+Pt a rula un proiect BDD folosim comanda behave in consola
+    behave
+    behave --tags=valid_login
+    behave -f html --tags=valid_login -o valid_login_report.html
+     behave -f html -o full_login_report.html
+Structura de executie
+1.Feature files ( Fiecare pas din fiecare scenariu )
+2.Step files ( se exectuta metoda step impl pt fiecare pas )
+3.Pages files ( apelam metodele in pages prin variabila context)
+(4) Step files se executa assert-urile
+
+Git -- > github
+
+1. Creem un repozitoriu in remote ( github)
+2. Urmam instructiunile din repozitoriul remote pt  urca codul din local
+    echo "# login-BDD" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/PaulLoghin/login-BDD.git
+    git push -u origin main
+
+
+
+
